@@ -7,7 +7,6 @@ body {
   color: #f1f1f1;
   font-family: system-ui, -apple-system, sans-serif;
   margin: 0;
-  padding: 0;
 }
 
 .container {
@@ -19,7 +18,6 @@ body {
 
 h1 {
   font-size: 1.8rem;
-  margin-bottom: 10px;
 }
 
 .clue {
@@ -45,20 +43,22 @@ button {
   border: none;
   background-color: #1f6feb;
   color: white;
-  cursor: pointer;
 }
 
-button:active {
-  transform: scale(0.98);
-}
-
-.image-container {
+#secretLink {
   margin-top: 25px;
 }
 
-#secretImage {
-  width: 100%;
-  border-radius: 12px;
-  filter: blur(18px);
-  transition: filter 0.6s ease;
+#secretLink a {
+  display: block;
+  padding: 14px;
+  background-color: #16a34a;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+}
+
+.hidden {
+  display: none;
 }
