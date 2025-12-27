@@ -1,13 +1,18 @@
 function checkPassword() {
-  const input = document.getElementById("password").value.trim().toLowerCase();
-  const image = document.getElementById("secretImage");
+  const input = document.getElementById("password")
+    .value
+    .trim()
+    .toLowerCase();
 
-  const correctPassword = "penguin"; // lowercase
+  const secretLink = document.getElementById("secretLink");
 
-  if (input === correctPassword) {
-    image.style.filter = "blur(0)";
-  } else {
-    alert("Incorrect password");
+  const acceptedPasswords = [
+    "penguin",
+    "penquin",
+    "penguing"
+  ];
+
+  if (acceptedPasswords.includes(input)) {
+    secretLink.classList.remove("hidden");
   }
 }
-
